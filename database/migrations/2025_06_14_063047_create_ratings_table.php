@@ -9,14 +9,16 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-public function up()
+    public function up()
 {
-    Schema::create('comments', function (Blueprint $table) {
+    Schema::create('ratings', function (Blueprint $table) {
         $table->id();
-        $table->foreignId('book_id')->constrained()->onDelete('cascade');
         $table->foreignId('user_id')->constrained()->onDelete('cascade');
-        $table->text('content');
+        $table->foreignId('book_id')->constrained()->onDelete('cascade');
+        $table->tinyInteger('rating'); // no 1 līdz 5
         $table->timestamps();
+
+        $table->unique(['user_id', 'book_id']); // 1 reitings uz lietotāju un grāmatu
     });
 }
 
@@ -26,6 +28,6 @@ public function up()
      */
     public function down(): void
     {
-        Schema::dropIfExists('comments');
+        Schema::dropIfExists('ratings');
     }
 };

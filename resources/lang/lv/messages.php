@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'book_list' => 'Grāmatu saraksts',
+    'add_book' => 'Pievienot grāmatu',
+    'edit_book' => 'Rediģēt grāmatu',
+    'title' => 'Nosaukums',
+    'author' => 'Autors',
+    'genre' => 'Žanrs',
+    'no_genre' => 'Nav žanra',
+    'show' => 'Skatīt',
+    'edit' => 'Rediģēt',
+    'delete' => 'Dzēst',
+    'confirm_delete' => 'Vai tiešām vēlies dzēst šo grāmatu?',
+    'save' => 'Saglabāt',
+    'update' => 'Atjaunināt',
+    'moderator' => 'Moderators',
+    'rating' => 'Reitings',
+    'no_ratings' => 'Vēl nav vērtējumu',
+    'your_rating' => 'Tavs vērtējums',
+    'rate' => 'Novērtēt',
+    'comments' => 'Komentāri',
+    'leave_comment' => 'Atstāj komentāru',
+    'submit' => 'Iesniegt',
+];

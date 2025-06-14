@@ -98,3 +98,22 @@
         </div>
     </div>
 </nav>
+<!-- JAU ESOŠAIS DASHBOARD -->
+<x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+    {{ __('Dashboard') }}
+</x-responsive-nav-link>
+
+<!-- TAVAS PAPILDFUNKCIJAS -->
+<x-responsive-nav-link :href="route('books.index')">
+    {{ __('messages.book_list') }}
+</x-responsive-nav-link>
+
+<x-responsive-nav-link :href="route('books.create')">
+    {{ __('messages.add_book') }}
+</x-responsive-nav-link>
+
+<!-- Valodu maiņa -->
+<div class="language-switcher">
+    <a href="{{ route('lang.switch', 'lv') }}">LV</a> |
+    <a href="{{ route('lang.switch', 'en') }}">EN</a>
+</div>

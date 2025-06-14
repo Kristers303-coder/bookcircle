@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'book_list' => 'Book List',
+    'add_book' => 'Add Book',
+    'edit_book' => 'Edit Book',
+    'title' => 'Title',
+    'author' => 'Author',
+    'genre' => 'Genre',
+    'no_genre' => 'No Genre',
+    'show' => 'Show',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'confirm_delete' => 'Are you sure you want to delete this book?',
+    'save' => 'Save',
+    'update' => 'Update',
+    'moderator' => 'Moderator',
+    'rating' => 'Rating',
+    'no_ratings' => 'No ratings yet',
+    'your_rating' => 'Your Rating',
+    'rate' => 'Rate',
+    'comments' => 'Comments',
+    'leave_comment' => 'Leave a comment',
+    'submit' => 'Submit',
+];

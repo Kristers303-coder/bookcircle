@@ -32,10 +32,12 @@ class BookController extends Controller
         return redirect()->route('books.index')->with('success', 'Grāmata pievienota!');
     }
 
-    public function show(Book $book)
-    {
-        return view('books.show', compact('book'));
-    }
+public function show(Book $book)
+{
+    $book->load(['comments.user', 'ratings']); // ielādē komentārus un reitingus ar lietotājiem
+    return view('books.show', compact('book'));
+}
+
 
     public function edit(Book $book)
     {
